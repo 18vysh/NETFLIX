@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('home.png') no-repeat;
+            background-size: cover;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .icon {
+            position: absolute;
+            top: 20px; 
+            right: 20px; 
+            width: 50px; 
+            height: 50px; 
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        .button {
+            background: rgba(255, 255, 255, 0.7);
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background: #e50914;
+        }
+    </style>
+    <title>Netflix Profile Page</title>
+</head>
+<body>
+
+     <div class="container">
+        <div class="icon"></div>
+        <h1>Welcome to Netflix</h1>
+        <p>Choose your profile:</p>
+
+        <a href="netflix-guests.html">
+            <button class="button">Guests</button>
+        </a>
+
+        <a href="netflix-kids.html">
+            <button class="button">Kids</button>
+        </a>
+    </div>
+
+
+</body>
+</html>

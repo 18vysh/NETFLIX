@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif; 
+            display: flex;
+            background-color: #000000; 
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #ff6600; 
+            color: #fff;
+            padding-top: 20px;
+            box-shadow: 0 4px 8px rgb(94, 1, 1);
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .menu-item {
+            padding: 10px 20px;
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border-bottom: 1px solid #555;
+            transition: background-color 0.3s;
+        }
+
+        .menu-item:hover {
+            background-color: #ff9900; 
+        }
+
+        h1 {
+            color: #3366cc; 
+        }
+
+        p {
+            color: #ffffff; 
+        }
+
+    </style>
+    <title>Netflix Kids User Page</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="#" class="menu-item" onclick="showContent('Movies')">Movies</a>
+        <a href="#" class="menu-item" onclick="showContent('Cartoons')">Cartoons</a>
+    </div>
+
+    <div class="content" id="main-content">
+        <h1>Welcome to Netflix Kids Account 🌈</h1>
+        <p><i>This is your awesome personalized content page. Choose from the options on the left.</i></p>
+    </div>
+
+    <script>
+        function showContent(category) {
+            var welcomeMessage = document.getElementById('main-content').querySelector('p');
+            
+            welcomeMessage.style.display = 'none';
+
+            document.getElementById('main-content').innerHTML = `<h2>${category}</h2><p>Super fun content for ${category} goes here. 🎉</p>`;
+        }
+    </script>
+
+</body>
+</html>
